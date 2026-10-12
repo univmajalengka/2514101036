@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jelajahi keindahan Telaga Biru Nila di Majalengka. Informasi daya tarik, galeri, dan inspirasi wisata alam.">
+  <title>Telaga Biru Nila | Wisata Majalengka</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --teal:#087e8b; --deep:#123c46; --mint:#dff4ef; --sand:#f7f8f3; }
+    * { box-sizing:border-box; }
+    body { font-family:'DM Sans',sans-serif; color:#20363a; background:#fff; }
+    .navbar { background:rgba(255,255,255,.96); box-shadow:0 3px 18px rgba(13,65,70,.07); }
+    .brand-mark { width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:var(--mint);color:var(--teal);font-size:1.2rem; }
+    .navbar-brand { color:var(--deep);font-weight:700;letter-spacing:.03em; }
+    .nav-link { color:#35565a; font-weight:600; font-size:.92rem; }
+    .nav-link:hover,.nav-link.active { color:var(--teal); }
+    .hero { min-height:500px; display:flex; align-items:center; color:#fff; position:relative; background:linear-gradient(90deg,rgba(5,38,47,.78),rgba(5,38,47,.2)),url('img/img-1.jpeg') center/cover; }
+    .hero-content { max-width:700px; padding-top:60px;padding-bottom:60px; }
+    .eyebrow { text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:700;color:#b8f0e5; }
+    h1,h2,h3 { font-family:'Playfair Display',serif; }
+    .hero h1 { font-size:clamp(2.7rem,6vw,5rem);line-height:1.06;margin:18px 0; }
+    .hero p { max-width:580px; font-size:1.08rem;line-height:1.8;color:#edf7f5; }
+    .btn-teal { background:var(--teal);color:#fff;border:1px solid var(--teal);border-radius:50px;padding:12px 22px;font-weight:700; }
+    .btn-teal:hover { background:#066773;color:#fff; }
+    .btn-outline-light { border-radius:50px;padding:12px 22px;font-weight:700; }
+    .intro-strip { background:var(--mint); }
+    .section-pad { padding:78px 0; }
+    .section-kicker { color:var(--teal);font-size:.76rem;letter-spacing:.17em;font-weight:700;text-transform:uppercase; }
+    .section-title { color:var(--deep);font-size:clamp(2rem,4vw,3rem);margin:10px 0 18px; }
+    .muted { color:#62777a;line-height:1.8; }
+    .feature-img { width:100%;height:420px;object-fit:cover;border-radius:22px; }
+    .mini-stat { background:#fff;border-radius:15px;padding:17px 20px;box-shadow:0 8px 28px rgba(16,68,72,.08); }
+    .mini-stat strong { display:block;color:var(--deep);font-size:1.05rem; }
+    .mini-stat span { font-size:.84rem;color:#708285; }
+    .card-tour { border:1px solid #e8efec;border-radius:18px;overflow:hidden;height:100%;transition:transform .2s,box-shadow .2s; }
+    .card-tour:hover { transform:translateY(-5px);box-shadow:0 15px 35px rgba(16,68,72,.12); }
+    .card-tour img { width:100%;height:220px;object-fit:cover; }
+    .card-tour .card-body { padding:23px; }
+    .tag { display:inline-block;background:#e5f5f1;color:#087e8b;border-radius:50px;padding:6px 11px;font-size:.73rem;font-weight:700; }
+    .video-panel { border-radius:22px;overflow:hidden;min-height:310px;background:linear-gradient(0deg,rgba(4,35,43,.75),rgba(4,35,43,.1)),url('img/img-6.jpeg') center/cover;display:flex;align-items:end;color:white;padding:30px; }
+    .play-button { width:62px;height:62px;display:grid;place-items:center;border-radius:50%;background:#fff;color:var(--teal);font-size:1.4rem;text-decoration:none;flex-shrink:0; }
+    .gallery-img { width:100%;height:220px;object-fit:cover;border-radius:16px; }
+    .cta { background:var(--deep);color:#fff;border-radius:24px;padding:42px; }
+    footer { background:#0d3038;color:#c5d9d8;padding:28px 0;font-size:.9rem; }
+    @media(max-width:767px){ .hero{min-height:520px}.feature-img{height:300px}.section-pad{padding:55px 0}.cta{padding:28px 22px}.gallery-img{height:170px} }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#beranda">
+      <span class="brand-mark">≈</span><span>TELAGA <span style="color:var(--teal)">BIRU NILA</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="#beranda">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#daya-tarik">Daya Tarik</a></li>
+        <li class="nav-item"><a class="nav-link" href="#paket">Paket Wisata</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="beranda">
+  <div class="container hero-content">
+    <div class="eyebrow">Wisata alam • Majalengka, Jawa Barat</div>
+    <h1>Sejenak Menepi,<br>Menikmati Birunya Alam.</h1>
+    <p>Temukan suasana tenang, air telaga yang memikat, dan pesona alam Telaga Biru Nila untuk mengisi waktu liburanmu.</p>
+    <div class="d-flex flex-wrap gap-3 mt-4">
+      <a class="btn btn-teal" href="#tentang">Jelajahi Wisata <span aria-hidden="true">↗</span></a>
+      <a class="btn btn-outline-light" href="#galeri">Lihat Galeri</a>
+    </div>
+  </div>
+</header>
+
+<div class="intro-strip py-3">
+  <div class="container d-flex flex-wrap justify-content-center gap-3 gap-md-5 text-center">
+    <span>🌿 Suasana alam yang asri</span><span>📷 Spot foto menarik</span><span>💧 Pesona telaga biru</span>
+  </div>
+</div>
+
+<section class="section-pad" id="tentang">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <img class="feature-img" src="img/img-2.jpeg" alt="Pemandangan air dan alam hijau">
+      </div>
+      <div class="col-lg-6">
+        <div class="section-kicker">Kenalan dengan destinasinya</div>
+        <h2 class="section-title">Pesona Telaga Biru Nila</h2>
+        <p class="muted">Telaga Biru Nila merupakan salah satu tujuan wisata alam yang dikenal dengan warna airnya yang memikat. Berada di kawasan Sindangwangi, Majalengka, tempat ini cocok untuk menikmati pemandangan, bersantai, dan mengabadikan momen bersama teman maupun keluarga.</p>
+        <p class="muted">Rencanakan kunjunganmu, tetap jaga kebersihan, dan ikuti arahan petugas agar keindahan alamnya tetap terjaga.</p>
+        <div class="row g-3 mt-3">
+          <div class="col-6"><div class="mini-stat"><strong>Wisata Alam</strong><span>Suasana segar dan asri</span></div></div>
+          <div class="col-6"><div class="mini-stat"><strong>Sindangwangi</strong><span>Majalengka, Jawa Barat</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="daya-tarik" style="background:var(--sand)">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-kicker">Yang bisa kamu nikmati</div>
+      <h2 class="section-title">Daya Tarik Wisata</h2>
+      <p class="muted mx-auto" style="max-width:650px">Sederhana, menenangkan, dan cocok untuk menyegarkan pikiran dari rutinitas sehari-hari.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><article class="card-tour bg-white"><img src="img/img-4.jpeg" alt="Panorama alam pegunungan"><div class="card-body"><span class="tag">01 · Panorama</span><h3 class="h4 mt-3">Pemandangan Alam</h3><p class="muted mb-0">Nikmati pemandangan hijau dan suasana alam yang menenangkan.</p></div></article></div>
+      <div class="col-md-4"><article class="card-tour bg-white"><img src="img/img-2.jpeg" alt="Danau di tengah pemandangan hijau"><div class="card-body"><span class="tag">02 · Eksplorasi</span><h3 class="h4 mt-3">Jelajah Sekitar Telaga</h3><p class="muted mb-0">Luangkan waktu untuk menikmati lingkungan wisata dan mencari sudut favoritmu.</p></div></article></div>
+      <div class="col-md-4"><article class="card-tour bg-white"><img src="img/img-1.jpeg" alt="Air berwarna biru"><div class="card-body"><span class="tag">03 · Momen</span><h3 class="h4 mt-3">Foto & Quality Time</h3><p class="muted mb-0">Abadikan momen liburan bersama sahabat, pasangan, atau keluarga.</p></div></article></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad" id="paket">
+  <div class="container">
+    <div class="row align-items-end mb-5 g-3">
+      <div class="col-lg-8"><div class="section-kicker">Inspirasi kunjungan</div><h2 class="section-title mb-2">Ide Paket Wisata</h2><p class="muted mb-0">Contoh aktivitas yang bisa dimasukkan ke rencana liburanmu.</p></div>
+      <div class="col-lg-4 text-lg-end"><span class="tag">Harga mengikuti informasi pengelola</span></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><article class="card-tour"><img src="img/img-6.jpeg" alt="Pemandangan danau"><div class="card-body"><span class="tag">Santai</span><h3 class="h4 mt-3">Jelajah Telaga</h3><p class="muted">Menikmati panorama dan berjalan santai di area wisata yang diperbolehkan.</p><a href="#kontak" class="fw-bold text-decoration-none" style="color:var(--teal)">Tanya informasi ↗</a></div></article></div>
+      <div class="col-md-4"><article class="card-tour"><img src="img/img-8.jpeg" alt="Kamera untuk fotografi"><div class="card-body"><span class="tag">Fotografi</span><h3 class="h4 mt-3">Hunting Foto</h3><p class="muted">Mencari spot foto dengan latar pemandangan alam untuk kenang-kenangan.</p><a href="#galeri" class="fw-bold text-decoration-none" style="color:var(--teal)">Lihat inspirasi foto ↗</a></div></article></div>
+      <div class="col-md-4"><article class="card-tour"><img src="img/img-7.jpeg" alt="Teman-teman beraktivitas bersama"><div class="card-body"><span class="tag">Kebersamaan</span><h3 class="h4 mt-3">Liburan Bareng</h3><p class="muted">Susun agenda singkat bersama teman atau keluarga dan nikmati waktu berkualitas.</p><a href="#kontak" class="fw-bold text-decoration-none" style="color:var(--teal)">Rencanakan kunjungan ↗</a></div></article></div>
+    </div>
+    <p class="small text-secondary mt-3">Catatan: bagian paket di atas adalah contoh konsep untuk website tugas, bukan paket resmi. Periksa harga tiket, jam operasional, fasilitas, dan aturan aktivitas kepada pengelola sebelum berkunjung.</p>
+  </div>
+</section>
+
+<section class="section-pad" style="background:var(--sand)" id="galeri">
+  <div class="container">
+    <div class="text-center mb-5"><div class="section-kicker">Tangkap momennya</div><h2 class="section-title">Galeri Alam</h2><p class="muted">Inspirasi visual untuk merencanakan perjalananmu.</p></div>
+    <div class="row g-3">
+      <div class="col-6 col-lg-3"><img class="gallery-img" src="img/img-10.jpeg" alt="Air terjun dan alam"></div>
+      <div class="col-6 col-lg-3"><img class="gallery-img" src="img/img-3.jpeg" alt="Pemandangan pegunungan"></div>
+      <div class="col-6 col-lg-3"><img class="gallery-img" src="img/img-9.jpeg" alt="Danau dan perbukitan"></div>
+      <div class="col-6 col-lg-3"><img class="gallery-img" src="img/img-5.jpeg" alt="Pemandangan alam terbuka"></div>
+    </div>
+    <p clas
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="video-panel h-100">
+          <div class="d-flex align-items-center gap-3">
+            <a class="play-button" href="https://youtu.be/iN-ZJmh95Fk?si=2CkqFQmGQU6TzlWU" target="_blank" rel="noopener" aria-label="Cari video Telaga Biru Nila di YouTube">▶</a>
+            <div><div class="eyebrow">Video wisata</div><h3 class="h2 mb-1">Lihat pesona Telaga Biru Nila</h3><p class="mb-0">Klik tombol untuk mencari video wisata di YouTube.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5" id="kontak">
+        <div class="cta h-100 d-flex flex-column justify-content-center">
+          <div class="eyebrow">Sebelum berangkat</div>
+          <h2 class="my-3">Siapkan perjalananmu.</h2>
+          <p style="color:#d0e0df;line-height:1.8">Cek informasi terbaru mengenai tiket masuk, jam buka, cuaca, fasilitas, dan aturan kunjungan melalui kanal resmi atau pengelola wisata.</p>
+          <a class="btn btn-light rounded-pill fw-bold align-self-start px-4 py-3" href="https://www.google.com/search?q=Telaga+Biru+Nila+Majalengka+informasi+wisata" target="_blank" rel="noopener">Cari Informasi Wisata ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© 2026 Telaga Biru Nila — Website promosi wisata (contoh tugas).</span><span>Jaga alam, bawa pulang sampahmu 🌿</span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
